@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>$Первая HTML страница$</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../static/style/mainPage.css">
+    <script src="/static/js/mainJs.js"></script>
+</head>
+<body style="height:100%;width:100%;line-height:1.4">
+<header th:insert="blocks/blockss :: header">
+    <div>
+        <form action="/logout" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+    </div>
+</header>
+<div class=midl>
+    <a href="/users" style="text-decoration: none;color:black;">
+        <button class=addcat>Пользователи</button>
+    </a>
+    <a href="/addCats" style="text-decoration: none;color:black;">
+        <button class=addcat>Добавить кота</button>
+    </a>
+    <div style="margin:0 auto;">
+        <table border="1" cellpadding="2" width="280px" style="margin:0 auto;" class="table table-dark">
+            <tr>
+                <th colspan="2" class=""><span class="px30">ID кота</span><span class="px30">  Имя</span></th>
+            </tr>
+
+            <div th:each="el : ${listcat}">
+                <tr class="form_radio_btn">
+                    <td colspan="2" style="width:300px">
+                        <input th:id="${el.id}" type="radio" name="radio" th:value="${el.id}" checked>
+                        <label th:for="${el.id}"> <span
+                                style=margin-right:70px;margin-left:20px;>[[${el.id}]]</span><span>[[${el.name}]]</span></label>
+
+                        <input type="hidden" name="name_cat1" th:id="name_cat+${el.id}" th:value="${el.name}"/>
+                        <input type="hidden" name="id_dad1" th:id="id_dad+${el.id}" th:value="${el.dad}"/>
+                        <input type="hidden" name="id_mam1" th:id="id_mam+${el.id}" th:value="${el.mam}"/>
+                        <input type="hidden" name="gender1" th:id="gender+${el.id}" th:value="${el.gender}"/>
+                    </td>
+                </tr>
+
+            </div>
+            <tr>
+                <td colspan="2">
+                    <form  th:object="${catsForm}" method="get" th:action="@{/chekCat}">
+                        <input type="hidden" name="id_cat" id="id_cat" th:field="*{id}">
+                        <button class=cat onclick="shipment()">
+                            Просмотреть
+                        </Button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <div th:insert="blocks/blockss :: buttonMainDelete">
+                </div>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

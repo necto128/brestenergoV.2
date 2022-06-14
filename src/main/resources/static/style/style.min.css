@@ -1,0 +1,551 @@
+.carousel,
+.carousel .carousel-inner,
+.carousel .carousel-inner .active,
+.carousel .carousel-inner .carousel-item,
+.view,
+body,
+html {
+    height: 100%
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.page-footer,
+.top-nav-collapse {
+    background-color: #1C2331
+}
+
+@media only screen and (max-width:768px) {
+    .navbar {
+        background-color: #1C2331
+    }
+}
+
+@font-face {
+    font-family: Compact;
+    src: url(/font/compact/compact.ttf);
+}
+
+@font-face {
+    font-family: Compact-Italic;
+    src: url(/font/compact/compact-italic.ttf)
+}
+
+@font-face {
+    font-family: Compact;
+    src: url(/font/compact/compact.woff);
+}
+
+@font-face {
+    font-family: Compact-Italic;
+    src: url(/font/compact/compact-italic.woff)
+}
+
+html,
+body,
+.view {
+    height: 100%
+}
+
+.carousel {
+    height: 100%
+}
+
+.carousel .carousel-inner {
+    height: 100%
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+    height: 100%
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.navbarhover:hover {
+    background-color: #3b465e
+}
+
+.top-nav-collapse {
+    background-color: #3b465e
+}
+
+.page-footer {
+    background-color: #3b465e
+}
+
+.footer-copyright {
+    background-color: #3b465e
+}
+
+.contactlogo {
+    width: 20px;
+    height: 20px
+}
+
+.my-href {
+    opacity: .8;
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px)
+}
+
+.my-href:hover {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px)
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto
+}
+
+.dronegaleryimg {
+    filter: brightness(0.8);
+}
+
+.dronegaleryimg:hover {
+    filter: brightness(1.2);
+}
+
+.menu-logo {
+    max-width: 30px
+}
+
+.navbar-brand {
+    font-size: 25px
+}
+
+.my-title {
+    font-size: 70px!important
+}
+
+.borderfont {
+    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;
+    letter-spacing: 0
+}
+
+.brestenergofont {
+    font-family: Compact, Arial, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;
+    letter-spacing: 0;
+    font-size: 13vmin!important
+}
+
+.brestenergofontlogo {
+    font-family: Compact, Arial, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;
+    letter-spacing: 0
+}
+
+.carousel-logo {
+    max-height: 15vmin
+}
+
+.carousel strong {
+    max-height: 20vmin!important
+}
+
+.carousel video {
+    max-width: 300%!important;
+    max-height: 300%!important
+}
+
+.information a {
+    color: #000
+}
+
+.information a:hover {
+    color: #33b5e5
+}
+
+.information li {
+    line-height: 1.4em
+}
+
+.our-info-main hr {
+    height: 5px;
+    width: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .4s ease;
+    background-color: #1c2a48;
+    border: 0
+}
+
+.our-info-main:hover hr {
+    width: 100%;
+    height: 5px
+}
+
+.imgnews {
+    max-height: 400px
+}
+
+.badgenews {
+    display: inline-block;
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .36rem .75rem;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: .2rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border: 1px solid #000!important
+}
+
+.news-table {
+    height: 100%!important
+}
+
+.newsheader {
+    color: #000
+}
+
+.newsheader:hover {
+    color: #01579b
+}
+
+iframe,
+object,
+embed,
+video {
+    max-width: 100%;
+    max-height: 100%;
+    border: none
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto
+}
+
+#main {
+    background-image: url(/static/img/main.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #59698d
+}
+
+#newspage {
+    height: 100%;
+    width: 100%;
+    background-image: url(/static/img/examplenews1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: table
+}
+
+.newspage-logo {
+    height: 100px
+}
+
+#newspage h1 {
+    font-size: 90px
+}
+
+.newspageheader {
+    height: 100%
+}
+
+#services {
+    height: 100%;
+    width: 100%;
+    background-image: url(/static/img/fullinfo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: table
+}
+
+.serv {
+    color: #3B465E;
+    background-color: #eee
+}
+
+.serv:hover {
+    color: #fff;
+    background-color: #3B465E
+}
+
+table a {
+    color: blue!important;
+    text-decoration: underline
+}
+
+.electronlogo {
+    max-width: 400px
+}
+
+.filbtn {
+    opacity: .7
+}
+
+.filbtn:hover {
+    opacity: 1
+}
+
+#aboutenergotelecom {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: table;
+    background-image: url(/static/img/drone4.jpg)
+}
+
+#electron3 {
+    height: 100%;
+    width: 100%;
+    background-image: url(/static/img/filial-img/electronsmal/9998.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: table
+}
+
+.about {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: table
+}
+
+.aboutbrestelektroseti {
+    background-image: url(/static/img/filial-img/brestelektroseti/about.jpg)
+}
+
+.electron1 {
+    background-image: url(/static/img/filial-img/electron/9999.jpg)
+}
+
+.information {
+    background-image: url(/static/img/fullinfo.jpg)
+}
+
+.hotnews {
+    background-image: url(/static/img/newspaper.jpg)
+}
+
+.aboutmain {
+    background-image: url(/static/img/drone4.jpg)
+}
+
+.aboutenergotelecom {
+    background-image: url(/static/img/filial-img/energotelecom/about.jpg)
+}
+
+.electron3 {
+    background-image: url(/static/img/filial-img/electronsmal/9998.jpg)
+}
+
+.brestteploseti {
+    background-image: url(/static/img/filial-img/brestteploseti/about.jpg)
+}
+
+.aboutuc {
+    background-image: url(/static/img/filial-img/uchebnyytsentr/about.jpg)
+}
+
+.aboutbares {
+    background-image: url(/static/img/filial-img/baranovichielektroseti/about.jpg)
+}
+
+.aboutbarts {
+    background-image: url(/static/img/filial-img/baranovichiteploseti/about.jpg)
+}
+
+.aboutenergoremont {
+    background-image: url(/static/img/filial-img/energoremont/about.jpg)
+}
+
+.aboutpinskelektroseti {
+    background-image: url(/static/img/filial-img/pinskelektroseti/about.jpg)
+}
+
+.aboutpinskteploseti {
+    background-image: url(/static/img/filial-img/pinskteploseti/about.jpg)
+}
+
+.aboutpruzhanyelektroseti {
+    background-image: url(/static/img/filial-img/pruzhanyelektroseti/about.jpg)
+}
+
+.aboutgres {
+    background-image: url(/static/img/filial-img/gres/about.jpg)
+}
+
+.aboutenergiya {
+    background-image: url(/static/img/filial-img/energiya/about.jpg)
+}
+
+.aboutenergonadzor {
+    background-image: url(/static/img/filial-img/energonadzor/about.jpg/)
+}
+
+.aboutdrone {
+    background-image: url(/static/img/filial-img/energotelecom/drone/about.jpg)
+}
+
+.scrollUp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    color: #fff;
+    background-color: #45526e;
+    border-radius: 5px
+}
+
+.scrollUp:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #45526e
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none!important
+}
+
+body {
+    top: 0!important
+}
+
+iframe.goog-te-menu-frame.skiptranslate {
+    font-family: Roboto, sans-serif!important;
+    margin-top: 2px;
+    width: 175px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    content: none!important
+}
+
+.goog-te-gadget-simple {
+    font-family: Roboto, sans-serif!important;
+    background-color: transparent!important;
+    white-space: nowrap!important;
+    border: 0!important;
+    font-size: 1rem!important;
+    content: none!important
+}
+
+.goog-te-menu-value {
+    font-family: Roboto, sans-serif!important;
+    color: #fff!important;
+    text-decoration: none!important;
+    border: 0!important;
+    float: right;
+    vertical-align: middle!important;
+    content: none!important
+}
+
+.goog-te-menu-value:hover {
+    color: #fff!important;
+    text-decoration: none!important
+}
+
+.goog-te-banner-frame {
+    display: none!important
+}
+
+.goog-te-gadget-icon {
+    background: url(/static/img/google.png) 0 0 no-repeat!important;
+    background-size: 16px!important
+}
+
+.goog-te-menu2 {
+    font-family: Roboto, sans-serif!important;
+    font-size: 1rem!important
+}
+
+iframe.goog-te-menu2-item div,
+.goog-te-menu2-item:link div,
+.goog-te-menu2-item:visited div,
+.goog-te-menu2-item:active div,
+.goog-te-menu2 {
+    color: blue!important;
+    font-family: Roboto, sans-serif!important
+}
+
+.pulses {
+    animation: none
+}
+
+.pulses:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 15px rgba(59, 70, 94)
+}
+
+.socialabout a {
+    color: white;
+}
+
+.logo-vk:hover {
+    color: #4C75A3;
+}
+
+.logo-youtube:hover {
+    color: #ED302F;
+}
+
+.logo-facebook:hover {
+    color: #3B5998;
+}
+
+.logo-twitter:hover {
+    color: #1DA1F2;
+}
+
+.logo-inst:hover {
+    color: #C9308D;
+}
+
+.pagination.pg-brstenergo .page-item.active .page-link {
+    background-color: #59698D;
+}
+
+.pagination.pg-brstenergo .page-item.active .page-link:hover {
+    background-color: #59698D;
+}
+
+.nav-pillss .nav-link.active,
+.nav-pillss .show>.nav-link {
+    color: white;
+    background-color: #3b465e;
+}
+
+.tabsbrstenergo a {
+    color: #000
+}
+
+.tabsbrstenergo a:hover {
+    color: #33b5e5
+}
+
+#droneicon:hover i {
+    color: #59698d
+}
+
+.notexthover:hover {
+    color: white;
+}
+
+.disabledlink {
+    pointer-events: none;
+}

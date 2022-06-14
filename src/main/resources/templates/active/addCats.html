@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <meta http-equiv="Content-Type; content=text/html charset=utf-8">
+    <title>$Первая HTML страница$</title>
+    <link rel="stylesheet" href="../../static/style/addCats.css"/>
+    <script src="/static/js/addCatJS.js"></script>
+</head>
+<body style=height:100%;width:100%>
+<header th:insert="blocks/blockss :: header"></header>
+<button class=addcat>Добавление нового кота</button>
+<div class=midl>
+    <div class="form">
+
+        <div>
+            <label style="margin:0 40px">М<input name="radio1" type="radio" value="М" id="typeм" class="form_input" checked></label>
+
+            <label>Ж<input name="radio1" type="radio" value="Ж" id="typeж" class="form_input"></label>
+        </div>
+
+        <form id="form1" method="post" th:action="@{/addCats}" th:object="${catsForm}">
+            <div class="form_grup">
+                <label class="form_label">Имя кота</label>
+                <input id="nameCat" name="nameCat" minlength="3" class="form_input" type="text" th:field="*{name}"/>
+            </div>
+            <div class="form_grup">
+                <label class="form_label">ID отца</label>
+                <input id="idDad" name="idDad" type="number" minlength="1" class="form_input" style=" width: 170px;" th:field="*{dad}"/>
+                <select id="iddadcats">
+                    <option>пустой</option>
+                    <div th:each="el : ${listcat}">
+                        <span th:if="${el.gender=='М'}">
+                            <option th:value="${el.id}">[[${el.id}]]</option>
+                        </span>
+                    </div>
+                </select>
+            </div>
+            <div class="form_grup">
+                <label class="form_label">ID матери</label>
+                <input id="idMam" name="idMam" type="number" class="form_input" style=" width: 170px;" th:field="*{mam}"/>
+                <select id="idmamcats">
+                    <option>пустой</option>
+                    <div th:each="el : ${listcat}">
+                         <span th:if="${el.gender=='Ж'}">
+                        <option th:value="${el.id}">[[${el.id}]]</option>
+                         </span>
+                    </div>
+                </select>
+            </div>
+            <input name="gender" type="hidden" id="gender" th:field="*{gender}"/>
+            <button type="submit" class="form_button" onclick="x1()">Записать кота</button>
+        </form>
+        <a th:href="@{/mainPage}">
+            <button class="form_button" onsubmit="false" onclick="cancel()" style="margin-top:0px;width:157.59px">
+                Отмена
+            </button>
+        </a>
+    </div>
+</div>
+</body>
+</html>

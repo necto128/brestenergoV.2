@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>$Первая HTML страница$</title>
+    <style th:insert="blocks/blockss::styleDelete"></style>
+</head>
+<body style=height:100%;width:100%>
+<header th:insert="blocks/blockss :: header"></header>
+<button class="addcat">Последний раз видим</button>
+<div class=midl>
+    <div style="width:600px;">
+        <table border="1" cellpadding="5" width="550px">
+            <tr>
+                <span><th class="shapka"><span class="px30">ID кота</span></th></span>
+                <span><th class="shapka"><span class="px30">Имя</span></th></span>
+                <span><th class="shapka"><span class="px30">ID отца</span></th></span>
+                <span><th class="shapka"><span class="px30">ID матери</span></th></span>
+                <span><th class="shapka"><span class="px30">Пол</span></th></span>
+            </tr>
+
+            <tr th:each="el:${listcats}">
+                <td><span class="px30">[[${el.id}]]</span></td>
+                <td><span class="px30">[[${el.name}]]</span></td>
+                <td><span class="px30">[[${el.dad.getId()}]]</span></td>
+                <td><span class="px30">[[${el.mam.getId()}]]</span></td>
+                <td><span class="px30">[[${el.gender}]]</span></td>
+            </tr>
+            </br>
+        </table>
+    </div>
+</div>
+<script>
+    setTimeout(function () {
+        window.location.href = '/mainPage';
+    }, 5 * 1000);
+</script>
+</body>
+</html>
