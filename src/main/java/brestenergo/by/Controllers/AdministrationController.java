@@ -289,8 +289,6 @@ public class AdministrationController {
         } else {
             object.setActive(false);
         }
-        System.out.println("///////////////////////////////////////////////////////////////O" + object);
-        System.out.println("///////////////////////////////////////////////////////////////M" + mess);
         model.addAttribute("customers", user);
         model.addAttribute("atribut", "addMessage");
         return "admin";
